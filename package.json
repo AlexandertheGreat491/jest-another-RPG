@@ -1,0 +1,28 @@
+{
+  "name": "jest-another-rpg",
+  "version": "1.0.0",
+  "description": "jest",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandertheGreat491/jest-another-RPG.git"
+  },
+  "keywords": [
+    "jest"
+  ],
+  "author": "Alex Van Dyke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexandertheGreat491/jest-another-RPG/issues"
+  },
+  "homepage": "https://github.com/AlexandertheGreat491/jest-another-RPG#readme",
+  "dependencies": {
+    "inquirer": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^28.1.1"
+  }
+}
