@@ -1,8 +1,6 @@
 //require statement
-const { exportAllDeclaration } = require('@babel/types');
-const { default: test } = require('node:test');
-const Player = require('../lib/Player');
 
+const Player = require('../lib/Player');
 test('creates a player object', () => {
     const player = new Player('Dave');
 
