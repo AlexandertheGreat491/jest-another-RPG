@@ -43,4 +43,16 @@ test("gets player's health value", () => {
 
     expect(player.getHealth()).toEqual(expect.stringContaining(player.health.toString()));
 });
-//expect.stringContaining() method is an expect method that can be used to ensure the string includes player's health
+//expect.stringContaining() method is an expect method that can be used to ensure the string includes player's health.
+
+//tests another method to check if the player is alive.
+
+test('checks if player is alive or not', () => {
+    const player = new Player('Dave');
+
+    expect(player.isAlive()).toBeTruthy();
+
+    player.health = 0;
+
+    expect(player.isAlive()).toBeFalsy();
+});
