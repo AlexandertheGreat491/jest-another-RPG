@@ -3,6 +3,7 @@ const Potion = require('../lib/Potion');
 jest.mock('../lib/Potion');
 console.log(new Potion());
 const Player = require('../lib/Player');
+const { default: test } = require('node:test');
 test('creates a player object', () => {
     const player = new Player('Dave');
 
@@ -36,3 +37,11 @@ test('gets inventory from player or returns false', () => {
 
     expect(player.getInventory()).toEqual(false);
 });
+
+//test for the getHealth() method
+test("gets player's health value", () => {
+    const player = new Player('Dave');
+
+    expect(player.getHealth()).toEqual(expect.stringContaining(player.health.toString()));
+});
+//expect.stringContaining() method is an expect method that can be used to ensure the string includes player's health
